@@ -6,12 +6,15 @@
 //
 
 import UIKit
-
+import AVFoundation
 
 
 protocol postViewControllerDelegate: AnyObject {
     
     func postViewController (_ vc: PostViewController, didTapCommentButoonFor post : PostModel)
+    func postViewController (_ vc: PostViewController, didTapProfileButtoon post : PostModel)
+
+
 }
 
 class PostViewController: UIViewController {
@@ -68,6 +71,10 @@ class PostViewController: UIViewController {
         return label
     }()
     
+    
+    var player: AVPlayer?
+    private var playerDidFinishObserver: NSObjectProtocol?
+
     init(model: PostModel){
         self.model = model
         super.init(nibName: nil, bundle: nil)
@@ -79,7 +86,7 @@ class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        configureVideo()
         let colors : [UIColor] = [
             .red , .green , .blue , .orange , .black , .white ]
         view.backgroundColor = colors.randomElement()
@@ -92,6 +99,8 @@ class PostViewController: UIViewController {
         setUpDoubleTapToLike()
         view.addSubview(captionLabel)
         view.addSubview(profileButton)
+        profileButton.addTarget(self, action: #selector(didTapProfileButtoon), for: .touchUpInside)
+    
         
     }
     
@@ -100,7 +109,8 @@ class PostViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         let size: CGFloat = 40
-        let yStart: CGFloat = view.height - (size * 4.0) - 30 - view.safeAreaInsets.bottom
+        let tabBarHeight: CGFloat = (tabBarController?.tabBar.height ?? 0)
+        let yStart: CGFloat = view.height - (size * 4.0) - 30 - view.safeAreaInsets.bottom - tabBarHeight
         for (index, button ) in [likeButton, commentButton, shareButton].enumerated() {
             button.frame = CGRect(x: view.width-size-10, y: yStart + (CGFloat(index) * 10) + (CGFloat(index) * size), width: size, height: size)
         }
@@ -124,6 +134,50 @@ class PostViewController: UIViewController {
         profileButton.layer.cornerRadius = size / 2
         
         
+        
+    }
+    
+    
+    private func configureVideo (){
+        
+        guard let path = Bundle.main.path(forResource: "m", ofType: "mp4") else{
+            return
+        }
+        let url = URL(fileURLWithPath: path)
+        player = AVPlayer(url: url)
+        
+        
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = view.bounds
+        playerLayer.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(playerLayer)
+        player?.volume = 0
+        player?.play()
+        
+        
+        
+        
+        
+        guard let player = player else {
+            return
+        }
+
+        playerDidFinishObserver = NotificationCenter.default.addObserver(
+            forName: .AVPlayerItemDidPlayToEndTime,
+            object: player.currentItem,
+            queue: .main
+        ) { _ in
+            player.seek(to: .zero)
+            player.play()
+        }
+        
+        
+        
+        
+    }
+    
+    @objc func didTapProfileButtoon (){
+        delegate?.postViewController(self, didTapProfileButtoon: model)
         
     }
     
