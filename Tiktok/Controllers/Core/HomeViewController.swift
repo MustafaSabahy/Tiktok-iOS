@@ -46,6 +46,7 @@ class HomeViewController: UIViewController {
         
         view.addSubview(horizantalScrollView)
         setUpFeed()
+        horizantalScrollView.contentInsetAdjustmentBehavior = .never
         horizantalScrollView.delegate = self
         horizantalScrollView.contentOffset = CGPoint(x: view.width, y: 0)
         setUpHeaderButton()

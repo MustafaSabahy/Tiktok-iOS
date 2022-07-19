@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		163A3DC8F8A1D368C9EB943C /* Pods_Tiktok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0011583DAE61DFED76AA4DB /* Pods_Tiktok.framework */; };
+		F73114082887154000BEEFD7 /* AuthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73114072887154000BEEFD7 /* AuthField.swift */; };
+		F731140B2887158700BEEFD7 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731140A2887158700BEEFD7 /* AuthButton.swift */; };
 		F797538B286FD3D600A60474 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F797538A286FD3D600A60474 /* GoogleService-Info.plist */; };
 		F797538E286FF67900A60474 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797538D286FF67900A60474 /* Extensions.swift */; };
 		F7975390287000D600A60474 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797538F287000D600A60474 /* PostModel.swift */; };
@@ -59,6 +61,8 @@
 		8A5FDCBC4ED90FFA3E9320F8 /* Pods-Tiktok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiktok.release.xcconfig"; path = "Target Support Files/Pods-Tiktok/Pods-Tiktok.release.xcconfig"; sourceTree = "<group>"; };
 		B5CE6E5E67A36FEA48C23B25 /* Pods-Tiktok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiktok.debug.xcconfig"; path = "Target Support Files/Pods-Tiktok/Pods-Tiktok.debug.xcconfig"; sourceTree = "<group>"; };
 		D0011583DAE61DFED76AA4DB /* Pods_Tiktok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiktok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73114072887154000BEEFD7 /* AuthField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthField.swift; sourceTree = "<group>"; };
+		F731140A2887158700BEEFD7 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		F797538A286FD3D600A60474 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F797538D286FF67900A60474 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F797538F287000D600A60474 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -128,6 +132,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F73114092887155300BEEFD7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F73114072887154000BEEFD7 /* AuthField.swift */,
+				F731140A2887158700BEEFD7 /* AuthButton.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F731140C2887161800BEEFD7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F7DCF8E9286FC3D20080F027 /* SignUpViewController.swift */,
+				F7DCF8EB286FC3DE0080F027 /* SignInViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		F79753A52874283D00A60474 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +169,8 @@
 			children = (
 				F79753B7287447FA00A60474 /* ExploreUserCollectionViewCell.swift */,
 				F79753B92874480800A60474 /* ExploreHashtagCollectionViewCell.swift */,
-				F79753BB2874481500A60474 /* ExplorePostCollectionViewCell.swift */,
 				F79753BD2874482100A60474 /* ExploreBannerCollectionViewCell.swift */,
+				F79753BB2874481500A60474 /* ExplorePostCollectionViewCell.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -269,9 +291,8 @@
 		F7DCF8DE286FC35C0080F027 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F731140C2887161800BEEFD7 /* Auth */,
 				F7DCF8E7286FC3C20080F027 /* UserListViewController.swift */,
-				F7DCF8E9286FC3D20080F027 /* SignUpViewController.swift */,
-				F7DCF8EB286FC3DE0080F027 /* SignInViewController.swift */,
 				F7DCF8ED286FC3EB0080F027 /* SettingViewController.swift */,
 				F7DCF8F3286FC4A40080F027 /* PostViewController.swift */,
 				F79753912871E3B200A60474 /* CommentViewController.swift */,
@@ -290,6 +311,7 @@
 		F7DCF8F2286FC47D0080F027 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F73114092887155300BEEFD7 /* Auth */,
 				F79753B6287447EA00A60474 /* Explore */,
 			);
 			path = Other;
@@ -440,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F79753AB2874288900A60474 /* ExploreSectionType.swift in Sources */,
+				F731140B2887158700BEEFD7 /* AuthButton.swift in Sources */,
 				F79753BA2874480800A60474 /* ExploreHashtagCollectionViewCell.swift in Sources */,
 				F797539C287427AA00A60474 /* ExploreBannerViewModel.swift in Sources */,
 				F79753922871E3B200A60474 /* CommentViewController.swift in Sources */,
@@ -459,6 +482,7 @@
 				F7DCF8F4286FC4A40080F027 /* PostViewController.swift in Sources */,
 				F7DCF8E2286FC3920080F027 /* CameraViewController.swift in Sources */,
 				F797539E287427C000A60474 /* ExplorePostViewModel.swift in Sources */,
+				F73114082887154000BEEFD7 /* AuthField.swift in Sources */,
 				F7DCF8F0286FC41B0080F027 /* TabBarViewController.swift in Sources */,
 				F7DCF8C8286FB9800080F027 /* HomeViewController.swift in Sources */,
 				F79753B5287428CB00A60474 /* Creator.swift in Sources */,

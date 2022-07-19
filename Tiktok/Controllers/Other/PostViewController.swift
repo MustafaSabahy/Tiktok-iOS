@@ -109,8 +109,8 @@ class PostViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         let size: CGFloat = 40
-        let tabBarHeight: CGFloat = (tabBarController?.tabBar.height ?? 0)
-        let yStart: CGFloat = view.height - (size * 4.0) - 30 - view.safeAreaInsets.bottom - tabBarHeight
+//        let tabBarHeight: CGFloat = (tabBarController?.tabBar.height ?? 0)
+        let yStart: CGFloat = view.height - (size * 4.0) - 30 - view.safeAreaInsets.bottom
         for (index, button ) in [likeButton, commentButton, shareButton].enumerated() {
             button.frame = CGRect(x: view.width-size-10, y: yStart + (CGFloat(index) * 10) + (CGFloat(index) * size), width: size, height: size)
         }
