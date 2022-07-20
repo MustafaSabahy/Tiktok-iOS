@@ -12,6 +12,9 @@ target 'Tiktok' do
 
    pod 'Appirater'
    pod 'SDWebImage'
+   pod 'ProgressHUD'
+
+   pod 'SwiftyCam'
 
 
 end

@@ -10,6 +10,8 @@
 		163A3DC8F8A1D368C9EB943C /* Pods_Tiktok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0011583DAE61DFED76AA4DB /* Pods_Tiktok.framework */; };
 		F73114082887154000BEEFD7 /* AuthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73114072887154000BEEFD7 /* AuthField.swift */; };
 		F731140B2887158700BEEFD7 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731140A2887158700BEEFD7 /* AuthButton.swift */; };
+		F731140E2888197A00BEEFD7 /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731140D2888197A00BEEFD7 /* CaptionViewController.swift */; };
+		F7311410288819AE00BEEFD7 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731140F288819AE00BEEFD7 /* RecordButton.swift */; };
 		F797538B286FD3D600A60474 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F797538A286FD3D600A60474 /* GoogleService-Info.plist */; };
 		F797538E286FF67900A60474 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797538D286FF67900A60474 /* Extensions.swift */; };
 		F7975390287000D600A60474 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797538F287000D600A60474 /* PostModel.swift */; };
@@ -63,6 +65,8 @@
 		D0011583DAE61DFED76AA4DB /* Pods_Tiktok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiktok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73114072887154000BEEFD7 /* AuthField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthField.swift; sourceTree = "<group>"; };
 		F731140A2887158700BEEFD7 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		F731140D2888197A00BEEFD7 /* CaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionViewController.swift; sourceTree = "<group>"; };
+		F731140F288819AE00BEEFD7 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		F797538A286FD3D600A60474 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F797538D286FF67900A60474 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F797538F287000D600A60474 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 				F7DCF8F2286FC47D0080F027 /* Other */,
 				F7DCF8F1286FC46E0080F027 /* Storyboards */,
 				F7975397287299F500A60474 /* CommentTableViewCell.swift */,
+				F731140F288819AE00BEEFD7 /* RecordButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				F7DCF8ED286FC3EB0080F027 /* SettingViewController.swift */,
 				F7DCF8F3286FC4A40080F027 /* PostViewController.swift */,
 				F79753912871E3B200A60474 /* CommentViewController.swift */,
+				F731140D2888197A00BEEFD7 /* CaptionViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -489,6 +495,7 @@
 				F7DCF8E4286FC39E0080F027 /* NotificationsViewController.swift in Sources */,
 				F79753B1287428B400A60474 /* Post.swift in Sources */,
 				F7DCF8FC286FC4F40080F027 /* AuthenticationManager.swift in Sources */,
+				F7311410288819AE00BEEFD7 /* RecordButton.swift in Sources */,
 				F79753BC2874481500A60474 /* ExplorePostCollectionViewCell.swift in Sources */,
 				F7DCF8E6286FC3A90080F027 /* ProfileViewController.swift in Sources */,
 				F7DCF8EA286FC3D20080F027 /* SignUpViewController.swift in Sources */,
@@ -500,6 +507,7 @@
 				F7DCF8C6286FB9800080F027 /* SceneDelegate.swift in Sources */,
 				F797539428728ED700A60474 /* User.swift in Sources */,
 				F79753BE2874482100A60474 /* ExploreBannerCollectionViewCell.swift in Sources */,
+				F731140E2888197A00BEEFD7 /* CaptionViewController.swift in Sources */,
 				F79753AD287428A100A60474 /* ExploreResponse.swift in Sources */,
 				F79753B3287428C200A60474 /* Hashtag.swift in Sources */,
 				F79753A72874285700A60474 /* ExploreSection.swift in Sources */,

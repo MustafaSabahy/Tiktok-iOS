@@ -55,11 +55,16 @@ class TabBarViewController: UITabBarController {
         let nav2 = UINavigationController(rootViewController: explore)
         let nav3 = UINavigationController(rootViewController: notifications)
         let nav4 = UINavigationController(rootViewController: profile)
+        let cameraNav = UINavigationController(rootViewController: camera)
 
-        
         nav1.navigationBar.backgroundColor = .clear
         nav1.navigationBar.setBackgroundImage(UIImage(), for: .default)
         nav1.navigationBar.shadowImage = UIImage()
+        
+        cameraNav.navigationBar.backgroundColor = .clear
+        cameraNav.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        cameraNav.navigationBar.shadowImage = UIImage()
+        cameraNav.navigationBar.tintColor = .white
         
         
         
