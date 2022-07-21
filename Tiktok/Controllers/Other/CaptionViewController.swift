@@ -11,7 +11,7 @@ import UIKit
 
 class CaptionViewController: UIViewController {
 
-    let videoURL: URL
+   
 
     private let captionTextView: UITextView = {
         let textView = UITextView()
@@ -22,6 +22,9 @@ class CaptionViewController: UIViewController {
         return textView
     }()
 
+    
+    let videoURL: URL
+    
     // MARK: - Init
 
     init(videoURL: URL) {
