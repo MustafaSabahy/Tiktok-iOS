@@ -25,6 +25,10 @@ Sign In |Feed page |Explore | Camera | Notifications| Profile| Sitting
 If you want to contribute to this app, you're always welcome!
 See [Contributing Guidelines](https://github.com/MustafaSabahy/Tiktok-iOS/blob/main/CONTRIBUTION.md). 
 
+Third Party Libraries
+* SwiftyCam
+* ProgressHUD
+* Appirater
 
 
 ## License
