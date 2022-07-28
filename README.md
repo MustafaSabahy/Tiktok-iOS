@@ -1,6 +1,4 @@
-#Tiktok App in Swift 
-
-this is the source code repo for the tiktok app that built in swift 
+![GitHub Cards Preview](https://github.com/MustafaSabahy/Tiktok-iOS/blob/main/cover.png?raw=true)
 
 
 #Features
