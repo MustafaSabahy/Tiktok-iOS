@@ -23,7 +23,7 @@ Sign In |Feed page |Explore | Camera | Notifications| Profile| Sitting
 
 ## Contribute
 If you want to contribute to this app, you're always welcome!
-See [Contributing Guidelines](https://github.com/sameersyd/Expenso/blob/main/CONTRIBUTION.md). 
+See [Contributing Guidelines](https://github.com/MustafaSabahy/Tiktok-iOS/blob/main/CONTRIBUTION.md). 
 
 
 
