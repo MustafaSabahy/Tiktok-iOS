@@ -26,9 +26,9 @@ If you want to contribute to this app, you're always welcome!
 See [Contributing Guidelines](https://github.com/MustafaSabahy/Tiktok-iOS/blob/main/CONTRIBUTION.md). 
 
 Third Party Libraries
-* SwiftyCam
-* ProgressHUD
-* Appirater
+* [ SwiftyCam ](https://github.com/Awalz/SwiftyCam)
+*  [ ProgressHUD ](https://github.com/relatedcode/ProgressHUD)
+*  [ Appirater ](https://github.com/arashpayan/appirater)
 
 
 ## License
